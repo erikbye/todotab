@@ -7,16 +7,14 @@ window.addEventListener('keyup', (event) => {
         return;
     }
 
-    if (keyName === 'Escape') {        
+    if (keyName === 'Escape') {
         document.getElementById("add_todo").blur();
         // TODO: remove text inputted on blur
     }
 });
 
-window.onload = function() {    
-    document.hasFocus();    
-
-    console.log("As you can see there are still bugs and quirks to work out, I would also like a few more features (multiple todo lists). Contributions are very welcome, https://github.com/erikbye/todotab")
+window.onload = function() {
+    document.hasFocus();
 }
 
 const noop = () => {};
@@ -99,11 +97,11 @@ class TodoList {
     }
 } // end class
 
-const backgrounds = [   
+const backgrounds = [
     {
         src: "0.jpg",
         caption: "Though no one can go back and make a brand-new start, anyone can start from now and make a brand-new ending."
-    },    
+    },
     {
         src: "1.jpg",
         caption: "Only put off until tomorrow what you are willing to die having left undone."
@@ -245,7 +243,7 @@ function append_todo_to_HTML_list(todo, list) {
     child.todo = todo;
     child.id = 'todo-item-' + todo.id;
     child.title = todo.date.toString();
- 
+
     const span = document.createElement('span');
     span.innerText = todo.text;
 
@@ -390,7 +388,7 @@ for (const menu of document.getElementsByTagName("menu")) {
         return;
 
     const date = get_datetime();
-    
+
     element.innerText = date.dayname + ' ' + date.day;
 
     const el = document.getElementById('dateyear');
@@ -403,6 +401,6 @@ for (const menu of document.getElementsByTagName("menu")) {
         return;
 
     const week = new Date().getWeek();
-    
+
     element.innerText = 'Week ' + week;
 })();

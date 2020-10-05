@@ -12,7 +12,7 @@
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 html,
@@ -21,7 +21,7 @@ body {
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin: 0;            
+    margin: 0;
     background-color: #000;
     background-size: cover;
 }
@@ -51,7 +51,7 @@ a:visited {
     color: rgb(185, 185, 185);
 }
 
-input {    
+input {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -94,22 +94,22 @@ input {
     width: 600px;
 }
 
-#datetime {    
+#datetime {
     font-size: 34px;
-    color: whitesmoke;    
+    color: whitesmoke;
 }
 
-#dateyear {    
+#dateyear {
     font-size: 24px;
-    color: whitesmoke;    
+    color: whitesmoke;
 }
 
-#weeknumber {    
+#weeknumber {
     font-size: 22px;
-    color: whitesmoke;     
+    color: whitesmoke;
 }
 
-#datetimeContainer {    
+#datetimeContainer {
     margin: auto;
     text-align: center;
 }
@@ -130,7 +130,8 @@ input {
     margin-right: 20px;
     overflow-y: auto;
     overflow-x: hidden;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 
     /* This is a Firefox-only property */
     scrollbar-color: rgba(39, 39, 39, 0.9) rgba(0,0,0,0.5);
